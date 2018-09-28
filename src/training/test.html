@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<div id="testdiv">
+  <p>This is <em>My</em> content . </p>
+</div>
+<script>
+  window.onload = function (ev) {
+    let parent = document.getElementById("testdiv");
+    let para = document.createElement("p");
+    let txt1 = document.createTextNode("This is ");
+    let newEle = document.createElement("em");
+    let txt2 = document.createTextNode("My new");
+    let txt3 = document.createTextNode(" content .");
+    parent.appendChild(para);
+    para.appendChild(txt1);
+    para.appendChild(newEle);
+    para.appendChild(txt3);
+    newEle.appendChild(txt2);
+    let a = [];
+    for (let i = 0; i < 10; i++) {
+      console.log("going on ");
+      a[i] = function () {
+        console.log(i);
+      };
+    }
+    a[6]();
+  }
+</script>
+</body>
+</html>

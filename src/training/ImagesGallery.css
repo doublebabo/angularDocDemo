@@ -1,0 +1,45 @@
+img {
+  width: 400px;
+  height: 300px;
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: Helvetica, Arial, Serif;
+  color: #333;
+  background-color: #ccc;
+  margin: 1em 10%;
+}
+
+h1 {
+  color: #333;
+  background-color: transparent;
+}
+
+a {
+  color: #c60;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+
+}
+ul :hover{
+  color: black;
+}
+
+li {
+  float: left;
+  /*display: inline;*/
+  padding: 1em;
+  list-style: none;
+}
+
+ul img{
+  width: 60px;
+  height: 60px;
+}
